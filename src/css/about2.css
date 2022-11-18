@@ -14,16 +14,16 @@ body {
     justify-content: space-between;
     background-color: #023047;
     margin: 0;
-    background-color: #1e6091;
     height: 100vh;
+    background-color: #000000;
     overflow-y: scroll;
     font-family: 'Bebas Neue', cursive;
     -webkit-animation: fadeIn 1 0.5s ease-out;
     -moz-animation: fadeIn 1 0.5s ease-out;
     -o-animation: fadeIn 1 0.5s ease-out;
     animation: fadeIn 1 0.5s ease-out;
-
 }
+
 
 
 .nft {
@@ -54,6 +54,7 @@ body {
 }
 
 .box {
+    margin-top: 10vh;
     width: 378px;
     height: 82px;
     background-color: #DDFFF7;

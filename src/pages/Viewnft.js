@@ -7,7 +7,7 @@ import img2 from '../assets/emoji.png'
 import UserContext from "../ContexProvider";
 import axios from "axios";
 import MoonLoader from "react-spinners/ClipLoader";
-import {getPKH} from '../utils/wallet'
+import { getPKH } from '../utils/wallet'
 import sad from '../assets/sad-face.gif';
 
 
@@ -25,13 +25,14 @@ function Viewnft() {
             setLoading(true)
             const address = await getPKH();
             await new Promise(resolve => setTimeout(resolve, 1000));
-                const fetchdata = await axios.get(`https://api.jakartanet.tzkt.io/v1/tokens/balances?account=${address}&token.contract=KT1XSqpRQUqubwJwdjRFduYwKa3vXAqBssxU`)
+            const fetchdata = await axios.get(`https://api.jakartanet.tzkt.io/v1/tokens/balances?account=${address}&token.contract=KT1XSqpRQUqubwJwdjRFduYwKa3vXAqBssxU`)
                 .then(res => {
                     return res.data;
                 })
             const arr = fetchdata.filter((item) => !!item.token.metadata);
-            console.log(arr)
-            setData(arr)
+            const tookenarr = arr.filter((item) => !item.token.metadata.NFT);
+            console.log(tookenarr)
+            setData(tookenarr)
             setLoading(false)
         }
         if (Data.length == 0) { fetchnft() }
@@ -64,8 +65,8 @@ function Viewnft() {
                                 <div className="item-style">
                                     <div className="thumb">
                                         <Link to="#">
-                                            <img style={{ maxHeight: "250px", minHeight: "250px" }}src={`https://ipfs.io/ipfs/${item.token.metadata.image.split("ipfs://")[1]
-                                                }`} alt="" /> 
+                                            <img style={{ maxHeight: "300px", minHeight: "250px" }} src={`https://ipfs.io/ipfs/${item.token.metadata.image.split("ipfs://")[1]
+                                                }`} alt="" />
                                         </Link>
                                     </div>
                                     <div className="content">

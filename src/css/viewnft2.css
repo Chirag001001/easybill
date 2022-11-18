@@ -150,7 +150,7 @@ i.ri-heart-fill {
 }
 
 .d-flex-center {
-    height: 50px;
+    height: 0px;
     overflow-y: hidden;
     display: flex;
     align-items: center;
@@ -289,12 +289,12 @@ i.ri-heart-fill {
     }
 }
 
-.no-minted{
+.no-minted {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 100%;
-    color:aqua;
+    color: aqua;
     padding: 10px;
     margin-left: 13%;
     height: 100%;
@@ -303,32 +303,32 @@ i.ri-heart-fill {
     justify-content: center;
 }
 
-.no-minted h2{
+.no-minted h2 {
     font-size: 530%;
 }
 
-.no-minted img{
+.no-minted img {
     height: 200px;
     width: 200px;
 }
 
 @media only screen and (max-width: 897px) {
-    .no-minted h2{
+    .no-minted h2 {
         font-size: 330%;
     }
 
-    .no-minted img{
+    .no-minted img {
         height: 150px;
         width: 150px;
     }
 }
 
 @media only screen and (max-width: 580px) {
-    .no-minted h2{
+    .no-minted h2 {
         font-size: 230%;
     }
 
-    .no-minted img{
+    .no-minted img {
         height: 100px;
         width: 100px;
     }

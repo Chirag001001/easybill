@@ -125,7 +125,7 @@ export default function Multimint() {
           </form>
           
         ))}
-        <button style={{background:"#1e8098",colore:"white",margin:"10px", padding:"10px 25px",borderRadius:"3px",border:"none"}} onClick={addFields}>+ Add</button>
+        <button style={{background:"#1e8098",color:"white",margin:"10px", padding:"10px 25px",borderRadius:"3px",border:"none"}} onClick={addFields}>+ Add</button>
          <div className="row">
               <input style={{background:"#1e8098"}} type="submit" onClick={submit} value="Submit" />
             </div>

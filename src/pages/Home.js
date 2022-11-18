@@ -32,8 +32,8 @@ function Home() {
             <div className="home_light home_x9" />
             <div className="home_container">
                 <div className="home_displaycontent">
-                    <h2>EasyMint NFTs on Tezos Blockchain</h2>
-                    <h2>EasyMint NFTs on Tezos Blockchain</h2>
+                    <h2>EasyBill for your products on blockchain</h2>
+                    <h2>EasyBill for your products on blockchain</h2>
                 </div>
                 <div className="xxx">
 

@@ -13,16 +13,16 @@ body {
   justify-content: space-between;
   background-color: #023047;
   margin: 0;
-  background-color: #1e6091;
   height: 100vh;
+  background-color: #1e9169;
   overflow-y: scroll;
   font-family: 'Bebas Neue', cursive;
   -webkit-animation: fadeIn 1 0.5s ease-out;
   -moz-animation: fadeIn 1 0.5s ease-out;
   -o-animation: fadeIn 1 0.5s ease-out;
   animation: fadeIn 1 0.5s ease-out;
-
 }
+
 
 .loading-indicator {
   text-align: center;
@@ -401,7 +401,7 @@ input[type="checkbox"]:checked~.address,
     position: relative;
     width: 80vw;
     top: 4vh;
-    left:0vh;
+    left: 0vh;
     flex-wrap: nowrap;
     flex-direction: column;
     height: 65vh;

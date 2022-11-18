@@ -31,7 +31,7 @@ export default function Mintednftbox({ submit }) {
                     <div>
                         <textarea placeholder="Description" name="desc" required className="nft-desc" type="paragraph" />
                     </div>
-                    <button type="submit" className="mint-btn">Easy Mint</button>
+                    <button type="submit" className="mint-btn">Easy Bill</button>
                 </div>
             </form>
 

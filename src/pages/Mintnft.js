@@ -5,7 +5,7 @@ import { mintNFT } from "../utils/wallet";
 import Mintednftbox from "../components/mintednftbox/Mintednftbox";
 import MintednftOther from "../components/mintednftbox/MintednftOther";
 import { uploadToIpfs } from "../utils/upload";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Mintnft() {
   const [toggle, setToggle] = useState("own")
@@ -23,7 +23,7 @@ export default function Mintnft() {
     const description = e.target.desc.value
     const symbol = e.target.symbol.value
     const address = e.target.address.value
-    var ipfs = await uploadToIpfs(name, description,symbol, image)
+    var ipfs = await uploadToIpfs(name, description, symbol, image)
     if (ipfs != undefined) {
       setloading(false)
     }
@@ -43,7 +43,7 @@ export default function Mintnft() {
     const symbol = e.target.symbol.value
     const address = useraddress
     setloading(true)
-    var ipfs = await uploadToIpfs(name, description,symbol, image)
+    var ipfs = await uploadToIpfs(name, description, symbol, image)
     if (ipfs != undefined) {
       setloading(false)
     }
@@ -60,7 +60,7 @@ export default function Mintnft() {
 
 
           {toggle == "own" ?
-            (<><button id="other-mint" onClick={() => setToggle("other")}>Toggle to Mint NFT in Other address</button>
+            (<><button id="other-mint" onClick={() => setToggle("other")}>Toggle to Mint NFT in Buyer's address</button>
               <Mintednftbox setupload={upload} submit={submitforOwn} />
             </>) :
 
@@ -91,7 +91,7 @@ export default function Mintnft() {
           )
         }
       </div>
-      <Link to="/multimint" type="submit" style={{position:"absolute",width:"200px", left:"20%",bottom:"10px"}} className="mint-btn"> &rarr; Mint Multiple</Link>
+      <Link to="/multimint" type="submit" style={{ position: "absolute", width: "200px", left: "20%", bottom: "10px", textDecoration: "none", fontSize: "1.2vw" }} className="mint-btn"> &rarr; Mint Multiple</Link>
 
 
     </div >

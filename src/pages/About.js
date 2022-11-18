@@ -16,11 +16,11 @@ function About() {
                     <p>About US</p>
                 </div>
                 <div className="textabout">
-                We are a group of 3 highly enthusiastic developers built "EasyMint" - A Seamless NFT minting platform on Tezos. Using React as front-end, the web app is highly responsive and smooth to mint.
-Features such as Multiple NFTs minting and NFT minting to other address are implemented and fully operational, Many more exciting features will be added soon.
+                    We are still in developing Phase and there's always a better version of the product is on it's way.
+                    To remove all the discrepancies in the warranty and billing space, we at easybilling focuses on Minting warranty cards on blockchain in the NFT space.
                 </div>
                 <div className="social-icons"><a href="https://twitter.com/EasyMint001" target="_blank" className="social-link twitter-link "><img src={twitter} width={36} height={36} alt="" /></a>
-                    <a href="https://www.facebook.com/Easy-mint-102723372554502" target="_blank" className="social-link facebook-link "><img src={fb}width={36} height={36} alt="" /></a>
+                    <a href="https://www.facebook.com/Easy-mint-102723372554502" target="_blank" className="social-link facebook-link "><img src={fb} width={36} height={36} alt="" /></a>
                     <a href="https://www.instagram.com/easymint001/" target="_blank" className="social-link instagram-link "><img src={insta} width={36} height={36} alt="" /></a>
                     <a href="https://dribbble.com/Easymint" target="_blank" className="social-link dribble-link "><img src={dribble} width={36} height={36} alt="" /></a>
                     <a href="https://www.behance.net/easymint" target="_blank" className="social-link behance-link"><img src={behance} width={36} height={36} alt="" /></a>
